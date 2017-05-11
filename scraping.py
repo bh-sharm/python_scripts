@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from bs4 import BeautifulSoup
-link = "https://pythonprogramming.net/parsememcparseface"
+link = "https://yourlink.com/"
 try:
 #    open_url = urlopen("https://ca.indeed.com/jobs?q=research+analyst&l=Ontario")
     open_url = urlopen(link)
@@ -82,7 +82,7 @@ for df in dfs:
 # reading sidemaps
 print("================== SIDEMAPS STARTING =================")
 
-sitemap = "https://pythonprogramming.net/sitemap.xml"
+sitemap = "https://yourlink/sitemap.xml"
 open_url = urlopen(sitemap)
 soup = BeautifulSoup(open_url.read(), "xml")
 
